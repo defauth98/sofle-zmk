@@ -27,6 +27,35 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        exclamacao {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <13 1>;
+        };
+
+        arroba {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <2 14>;
+        };
+
+        jogodavelha {
+            bindings = <&kp HASH>;
+            key-positions = <15 3>;
+        };
+
+        dolar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <16 4>;
+        };
+
+        porcentagem {
+            bindings = <&kp PERCENT>;
+            key-positions = <17 5>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
