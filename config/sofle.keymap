@@ -54,6 +54,36 @@
             bindings = <&kp PERCENT>;
             key-positions = <17 5>;
         };
+
+        tio {
+            bindings = <&kp CARET>;
+            key-positions = <6 18>;
+        };
+
+        ecomercial {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <19 7>;
+        };
+
+        asterisco {
+            bindings = <&kp ASTERISK>;
+            key-positions = <20 8>;
+        };
+
+        abreparenteses {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <21 9>;
+        };
+
+        fechaparenteses {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <22 10>;
+        };
+
+        mais {
+            bindings = <&kp PLUS>;
+            key-positions = <23 11>;
+        };
     };
 
     keymap {
