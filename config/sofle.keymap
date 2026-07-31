@@ -177,11 +177,11 @@
 
         games {
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                       &trans  &trans  &trans  &trans  &trans  &tog 4
-&trans     &kp Q   &kp W   &kp E   &kp R   &kp T                        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &kp A   &kp S   &kp D   &kp F   &kp G                        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL  &kp Z   &kp X   &kp C   &kp V   &kp B      &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                   &trans  &trans  &kp M   &kp SPACE  &kp I     &trans  &trans  &trans  &trans  &trans
+&kp ESC           &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                       &trans  &trans  &trans  &trans  &trans  &tog 4
+&trans            &kp Q   &kp W   &kp E   &kp R   &kp T                        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_CONTROL  &kp A   &kp S   &kp D   &kp F   &kp G                        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT    &kp Z   &kp X   &kp C   &kp V   &kp B      &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                          &trans  &trans  &kp M   &kp SPACE  &kp I     &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>;
