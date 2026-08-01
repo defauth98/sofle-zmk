@@ -79,6 +79,15 @@
         };
     };
 
+    macros {
+        cedilha: cedilha {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp APOS &kp C>;
+            label = "CEDILHA";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -140,11 +149,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans  &trans           &trans       &trans          &trans          &trans                             &trans             &trans         &trans        &trans                &trans                 &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH        &kp DOLLAR      &kp PERCENT                        &kp CARET          &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp PLUS         &kp EQUAL    &kp MINUS       &kp APOS        &trans                             &kp LEFT_BRACKET   &kp TILDE      &kp CARET     &trans                &kp PIPE               &trans
-&trans  &trans           &trans       &kp UNDERSCORE  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans    &trans  &kp RIGHT_BRACKET  &kp GRAVE      &trans        &trans                &trans                 &trans
-                         &trans       &trans          &trans          &trans           &trans    &trans  &trans             &trans         &trans        &trans
+&trans  &trans           &trans       &trans     &trans          &trans                             &trans             &trans         &trans        &trans                &trans                 &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH   &kp DOLLAR      &kp PERCENT                        &kp CARET          &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp PLUS         &kp EQUAL    &kp MINUS  &kp APOS        &trans                             &kp LEFT_BRACKET   &kp TILDE      &kp CARET     &trans                &kp PIPE               &trans
+&trans  &trans           &kp UNDER    &cedilha   &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans    &trans  &kp RIGHT_BRACKET  &kp GRAVE      &trans        &trans                &trans                 &trans
+                         &trans       &trans     &trans          &trans           &trans    &trans  &trans             &trans         &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
