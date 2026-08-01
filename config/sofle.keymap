@@ -183,6 +183,8 @@
 &kp LEFT_SHIFT    &kp Z   &kp X   &kp C         &kp V   &kp B      &trans    &trans  &kp N    &kp M   &kp COMMA  &kp DOT  &trans    &trans
                           &trans  &kp LEFT_ALT  &kp M   &kp SPACE  &kp H     &trans  &kp TAB  &trans  &kp LGUI   &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp K_NEXT K_PREV>;
         };
     };
 };
