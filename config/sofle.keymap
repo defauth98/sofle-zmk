@@ -177,12 +177,12 @@
             >;
         };
 
-        games {
+        auxlayerapps {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                               &trans             &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &kp LG(LA(ENTER))                    &trans             &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                               &kp LG(LC(ENTER))  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans             &trans    &trans  &trans             &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                               &trans             &trans  &trans  &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp LG(LA(ENTER))                    &trans             &trans  &trans  &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                               &kp LG(LC(ENTER))  &trans  &trans  &kp LG(GRAVE)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans             &trans    &trans  &trans             &trans  &trans  &trans         &trans  &trans
                 &trans  &trans  &trans  &trans             &trans    &trans  &trans             &trans  &trans  &trans
             >;
 
